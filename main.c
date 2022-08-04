@@ -3,12 +3,13 @@
 
 int main()
 {
-    char A;
+    char A,B;
     float X,Y,q;
+ do{
  do{
      printf("choisir l'operation convenable :\n");
      printf("'+','-','*','/'\n");
-     scanf("%c", &A);
+     scanf("\n%c", &A);
  }while(A!= '+' && A!= '-' && A!= '*' && A!= '/' );
      printf("Donner deux nombres :\n");
      scanf("%f",&X);
@@ -32,5 +33,8 @@ int main()
    break;
    default : printf("Erreur!");
  }
-
+ printf("clique sur q pour quitte ou c pour restart");
+ scanf("\n%c", &B);
+}while(B != 'q');
+exit(0);
 }
